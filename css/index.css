@@ -1,0 +1,90 @@
+@charset "utf-8";
+*{margin: 0; padding: 0; font-family: NanumSquare;}
+ul{list-style: none;}
+a{text-decoration: none; color: #000;}
+
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+.main{ width: 100%; height: 960px;
+    position: relative;
+}
+
+.header{
+    width: 100%;
+    height: 37.5px;
+    position: absolute; z-index: 9; top: 37.5px;
+}
+
+/* 헤더 */
+.header .header-wrap{
+    width: 1400px;
+    height: 100%;
+    margin: 0 auto;
+    line-height: 37.5px;}
+
+/* 로고 */
+.header .header-wrap .logo{float: left; height: 70px; margin-left: 40px; margin-top: 40px; }
+.header .header-wrap .logo img{width: 100%; height: 100%;}
+
+/* 네비 */
+.header .header-wrap .m-nav{position: absolute; right: 30px; top: 40px;}
+.header .header-wrap .nav{float: right; margin-top: 100px; position: relative; top: 90px;}
+.header .header-wrap .nav ul li a{color: rgb(0, 0, 0); font-size: 20px; position: relative; margin-left: 8.5px;}
+.header .header-wrap .nav ul li a::after{content:"";
+ position: absolute; background: url("../images/roll1.png"); width: 81px; height: 35px; display: block; top: 0;transition: 0.5s; opacity: 0;}
+ .header .header-wrap .nav ul li:nth-child(2) a::after{background-image: url("../images/roll2.png"); width: 120px; height: 34px; display: block; top: 0;transition: 0.5s; opacity: 0;}
+ .header .header-wrap .nav ul li:nth-child(3) a::after{background-image: url("../images/roll3.png");width: 78px; height: 34px; display: block; top: 0;transition: 0.5s; opacity: 0}
+ .header .header-wrap .nav ul li:nth-child(4) a::after{background-image: url("../images/roll4.png");width: 130px; height: 34px; display: block; top: 0;transition: 0.5s; opacity: 0}
+
+
+.header .header-wrap .nav ul li:hover a::after{top: 10px; opacity: 1; z-index: -1;}
+li{
+    width:5px; height: 130px;
+}
+/* .line-box:hover .line{background-color: orange;} */
+
+.content{
+    width: 100%;
+    position: relative;
+}
+.content img{width: 100%;} 
+.content svg{position: absolute; top: 37%; left: 15.4%;}
+
+
+
+ /* Google chrome */
+ @-webkit-keyframes svg-text-anim {
+  40% {
+     stroke-dashoffset: 0;
+     fill: transparent;
+   }
+   60% {
+     stroke-dashoffset: 0;
+     fill: #ffbd00;
+   }
+   100% {
+     stroke-dashoffset: 0;
+     fill: #ffbd00;
+   }
+   
+}
+/* Most browsers */
+@keyframes svg-text-anim {
+  40% {
+     stroke-dashoffset: 0;
+     fill: transparent;
+   }
+   60% {
+     stroke-dashoffset: 0;
+     fill: #ffbd00;
+   }
+   100% {
+     stroke-dashoffset: 0;
+     fill: #ffbd00;
+   }
+   
+}
+
+.txt{
+  width: 273px; height: 104px; position: absolute; left:520px; top: 804px;
+}

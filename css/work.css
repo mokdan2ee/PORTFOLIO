@@ -1,0 +1,104 @@
+@charset "utf-8";
+*{margin: 0; padding: 0; font-family: NanumSquare;}
+ul{list-style: none;}
+a{text-decoration: none; color: #000;}
+
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+.main{ width: 100%; height: 960px;
+    position: relative;
+}
+
+.header{
+    width: 100%;
+    height: 37.5px;
+    position: absolute; z-index: 9; top: 37.5px;
+}
+
+/* 헤더 */
+.header .header-wrap{
+    width: 1400px;
+    height: 100%;
+    margin: 0 auto;
+    line-height: 37.5px;}
+
+/* 로고 */
+.header .header-wrap .logo{float: left; height: 60px; margin-left: 120px; margin-top: 20px; }
+.header .header-wrap .logo img{width: 100%; height: 100%;}
+
+/* 네비 */
+
+.header .header-wrap .nav{float: right;  margin-top: 25px; }
+.header .header-wrap .nav ul li{float: left; margin-left: 68px;}
+
+.header .header-wrap .nav ul li a{color: rgb(0, 0, 0); font-size: 19px; position: relative; }
+
+    .header .header-wrap .nav ul li a::after{content:"";
+        position: absolute; background: url("../images/work-btn10x.png"); width: 82px; height: 34px; display: block; top: 0;transition: 0.5s; opacity: 0; left: -10px;}
+        .header .header-wrap .nav ul li:nth-child(2) a::after{background-image: url("../images/work_btn2.png"); width: 117px; height: 34px; display: block; top: 0;transition: 0.5s; opacity: 0;}
+        .header .header-wrap .nav ul li:nth-child(3) a::after{background-image: url("../images/work_btn3.png");width: 74px; height: 34px; display: block; top: 0;transition: 0.5s; opacity: 0}
+        .header .header-wrap .nav ul li:nth-child(4) a::after{background-image: url("../images/work_btn4.png");width: 130px; height: 34px; display: block; top: 0;transition: 0.5s; opacity: 0}
+       
+        .header .header-wrap .nav ul li:hover a::after{top: 10px; opacity: 1; z-index: -1;}
+
+
+        .work1>a{
+            width: 171px; height: 310px; position: absolute; left:716px; top: 181px;
+            background: no-repeat url("../images/work-1-black0x.png"); 
+            background-size: cover; 
+            background-position: center;
+            transition: 0.6s;
+        }
+        .work1 a:hover{
+            background: url("../images/work-1.png"); 
+            background-size: cover; 
+            background-position: center;
+        } 
+
+        
+        .work2>a{
+            width: 161px; height: 400px; position: absolute; left:340px; top: 170px;
+            background: no-repeat url("../images/work-2-black0x.png"); 
+            background-size: cover; 
+            background-position: center;
+            transition: 0.6s;
+        }
+        .work2 a:hover{
+            background: url("../images/work-2.png"); 
+            background-size: cover; 
+            background-position: center;
+        } 
+        
+        .work3>a{
+            width: 155px; height: 155px; position: absolute; left:525px; top: 530px;
+            background: no-repeat url("../images/work-3-black0x.png"); 
+            background-size: cover; 
+            background-position: center;
+            transition: 0.6s;
+        }
+        .work3 a:hover{
+            background: url("../images/work-3.png"); 
+            background-size: cover; 
+            background-position: center;
+        } 
+        
+        .work4>a{
+            width: 269px; height: 212px; position: absolute; left:551px; top: 718px;
+            background: no-repeat url("../images/work-4-black0x.png"); 
+            background-size: cover; 
+            background-position: center;
+            transition: 0.6s;
+        }
+        .work4 a:hover{
+            background: url("../images/work-4.png"); 
+            background-size: cover; 
+            background-position: center;
+        } 
+        
+        .right{
+            width:724px;height:865.677px; background-color: rgb(206, 226, 169); position: fixed; left:938px; top:159px; z-index: 3;
+            overflow-y: scroll;
+            /* display: none; */
+        }
+        .content a{font-size: 0;}
+        .right img{width: 100%;}
