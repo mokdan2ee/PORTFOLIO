@@ -9,9 +9,20 @@ $("document").ready(function(){
         }
         $(".content a").eq(i).css("background-image", "url(images/work-"+(i+1)+".png)")
 
+
+
         // $(".content a").removeClass("on")
         // $(this).addClass("on")
         // $(this).css("background-image", `url(${$(this).hasClass("on")? "images/work-"+(i+1)+".png" : "images/work-"+(i+1)+"-black0x.png"})`)
+    })
+
+    $(".content a").mouseover(function(){
+        let i = $(".content a").index(this)
+
+        for(let k = 0; k < 4; k++){
+            $(".content a").eq(k).css("background-image", "url(images/work-"+(k+1)+"-black0x.png)")
+        }
+        $(".content a").eq(i).css("background-image", "url(images/work-"+(i+1)+".png)")
     })
 
     AOS.init();
