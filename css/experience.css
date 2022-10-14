@@ -37,7 +37,10 @@ a{text-decoration: none; color: #000;}
         position: absolute; background: url("../images/exp_btn10x.png"); width: 81px; height: 34px; display: block; top: 0;transition: 0.5s; opacity: 0; left: -11.8px;}
         .header .header-wrap .nav ul li:nth-child(2) a::after{background-image: url("../images/exp_btn20x.png"); width: 120px; height: 34px; display: block; top: 0;transition: 0.5s; opacity: 0;}
         .header .header-wrap .nav ul li:nth-child(3) a::after{background-image: url("../images/exp_btn30x.png");width: 78px; height: 34px; display: block; top: 0;transition: 0.5s; opacity: 0}
-        .header .header-wrap .nav ul li:nth-child(4) a::after{background-image: url("../images/exp_btn40x.png");width: 130px; height: 34px; display: block; top: 0;transition: 0.5s; opacity: 0}
+        .header .header-wrap .nav ul li:nth-child(4) a::after,
+        .header .header-wrap .nav ul li:nth-child(4) a.on::after
+        {background-image: url("../images/exp_btn40x.png");width: 130px; height: 34px; display: block; top: 0;transition: 0.5s; opacity: 0}
+        .header .header-wrap .nav ul li:nth-child(4) a.on::after{opacity: 1; top: 10px; z-index: -1;}
        
         .header .header-wrap .nav ul li:hover a::after{top: 10px; opacity: 1; z-index: -1;}
 
@@ -46,7 +49,7 @@ a{text-decoration: none; color: #000;}
             position: relative;
         }
         .content img{width: 100%;} 
-        .content svg{position: absolute; top: 5.2%; left: 18.3%;}
+        .content > svg{position: absolute; top: 5.2%; left: 18.3%;}
         
         
 
@@ -153,7 +156,7 @@ a{text-decoration: none; color: #000;}
   100%{transform: rotate(0);}
 } */
 .txt3{
-  width: 584px; position: absolute; left:290px; top: 985px;
+  width: 584px; position: absolute; left:260px; top: 920px;
 }
 .travel{
   width: 1337px; position: absolute; left:350px; top: 1156px;
@@ -244,7 +247,7 @@ a{text-decoration: none; color: #000;}
 
 
 .pdf>a{
-  width: 451px; height: 60px; position: absolute; left:734px;  top: 4231px;
+  width: 451px; height: 60px; position: absolute; left:734px;  top: 4155px;
   background: no-repeat url("../images/pdf-white0x.png"); 
   background-size: cover; 
   background-position: center;
@@ -257,4 +260,35 @@ a{text-decoration: none; color: #000;}
 } 
 
 
-/* .content-wave{position: absolute; width: 100px; left:1540px; top: 2244px;} */
+.content{overflow: hidden;}
+.wave{position: absolute; bottom: -3400px; width: 100%; z-index: -1;}
+
+.kakao>a{
+  width: 50px; height: 50px; position: absolute; left:784px; top: 4245px;
+  background: no-repeat url("../images/kakao0x.png"); 
+  background-size: cover; 
+  background-position: center;
+  transition: 0.3s;
+}
+.insta>a{
+  width: 50px; height: 50px; position: absolute; left:884px; top: 4245px;
+  background: no-repeat url("../images/insta0x.png"); 
+  background-size: cover; 
+  background-position: center;
+  transition: 0.3s;
+}
+.gmail>a{
+  width: 50px; height: 50px; position: absolute; left:984px; top: 4245px;
+  background: no-repeat url("../images/gmail0x.png"); 
+  background-size: cover; 
+  background-position: center;
+  transition: 0.3s;
+}
+
+.qr>a{
+  width: 50px; height: 50px; position: absolute; left:1076px; top: 4245px;
+  background: no-repeat url("../images/qr0x.png"); 
+  background-size: cover; 
+  background-position: center;
+  transition: 0.3s;
+}

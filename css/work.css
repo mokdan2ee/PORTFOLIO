@@ -36,12 +36,15 @@ a{text-decoration: none; color: #000;}
     .header .header-wrap .nav ul li a::after{content:"";
         position: absolute; background: url("../images/work-btn10x.png"); width: 82px; height: 34px; display: block; top: 0;transition: 0.5s; opacity: 0; left: -10px;}
         .header .header-wrap .nav ul li:nth-child(2) a::after{background-image: url("../images/work_btn2.png"); width: 117px; height: 34px; display: block; top: 0;transition: 0.5s; opacity: 0;}
-        .header .header-wrap .nav ul li:nth-child(3) a::after{background-image: url("../images/work_btn3.png");width: 74px; height: 34px; display: block; top: 0;transition: 0.5s; opacity: 0}
+        .header .header-wrap .nav ul li:nth-child(3) a::after,
+        .header .header-wrap .nav ul li:nth-child(3) a.on::after
+        {background-image: url("../images/work_btn3.png");width: 74px; height: 34px; display: block; top: 0;transition: 0.5s; opacity: 0}
+        .header .header-wrap .nav ul li:nth-child(3) a.on::after{opacity: 1; top: 10px; z-index: -1;}
         .header .header-wrap .nav ul li:nth-child(4) a::after{background-image: url("../images/work_btn4.png");width: 130px; height: 34px; display: block; top: 0;transition: 0.5s; opacity: 0}
        
         .header .header-wrap .nav ul li:hover a::after{top: 10px; opacity: 1; z-index: -1;}
 
-
+        
         .work1>a{
             width: 171px; height: 310px; position: absolute; left:716px; top: 181px;
             background: no-repeat url("../images/work-1-black0x.png"); 

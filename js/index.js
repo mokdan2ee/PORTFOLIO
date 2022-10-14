@@ -15,4 +15,5 @@ $("document").ready(function(){
         }
     }
 setTextAnimation(0.15,3.3,2,'linear','#ffffff',true);
+
 })

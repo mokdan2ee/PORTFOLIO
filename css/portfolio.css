@@ -35,7 +35,10 @@ a{text-decoration: none; color: #000;}
 
     .header .header-wrap .nav ul li a::after{content:"";
         position: absolute; background: url("../images/port_btn10x.png"); width: 78px; height: 34px; display: block; top: 0;transition: 0.5s; opacity: 0; left: -10px;}
-        .header .header-wrap .nav ul li:nth-child(2) a::after{background-image: url("../images/port_btn20x.png"); width: 118px; height: 34px; display: block; top: 0;transition: 0.5s; opacity: 0;}
+        .header .header-wrap .nav ul li:nth-child(2) a::after,
+        .header .header-wrap .nav ul li:nth-child(2) a.on::after
+        {background-image: url("../images/port_btn20x.png"); width: 118px; height: 34px; display: block; top: 0;transition: 0.5s; opacity: 0;}
+        .header .header-wrap .nav ul li:nth-child(2) a.on::after{opacity: 1; top: 10px; z-index: -1;}
         .header .header-wrap .nav ul li:nth-child(3) a::after{background-image: url("../images/port_btn30x.png");width: 74px; height: 34px; display: block; top: 0;transition: 0.5s; opacity: 0}
         .header .header-wrap .nav ul li:nth-child(4) a::after{background-image: url("../images/port_btn40x.png");width: 129px; height: 34px; display: block; top: 0;transition: 0.5s; opacity: 0}
        
@@ -116,9 +119,9 @@ a{text-decoration: none; color: #000;}
 
 
 
-    .section:nth-child(1){background: url("../images/portfolio1_10x.png"); background-size: cover;}
-    .section:nth-child(2){background: url("../images/portfolio20x.png"); background-size: cover;}
-    .section:nth-child(3){background: url("../images/portfolio30x.png"); background-size: cover;}
+    .section:nth-child(1){background: url("../images/pp10x.png"); background-size: cover;}
+    .section:nth-child(2){background: url("../images/pp20x.png"); background-size: cover;}
+    .section:nth-child(3){background: url("../images/pp30x.png"); background-size: cover;}
     .modal-content{
         position: fixed;
         width: 100%;

@@ -1,7 +1,7 @@
 $("document").ready(function(){
 
     function setTextAnimation(delay, duration, strokeWidth, timingFunction, strokeColor,repeat) {
-        let paths = document.querySelectorAll("path");
+        let paths = document.querySelectorAll(".content > svg path");
         let mode=repeat?'infinite':'forwards'
         for (let i = 0; i < paths.length; i++) {
             const path = paths[i];
@@ -19,22 +19,18 @@ setTextAnimation(0.13,3.3,2,'linear','#ffffff',true);
 
 
 $("#wave-1").wavify({
-    height: 800,
+    height: 650,
     bones:4,
     amplitude:40,
-    color: "#9a48fa",
+    color: "#ea9f3b",
     speed: .15
 })
 $("#wave-2").wavify({
-    height: 800,
+    height: 650,
     bones:4,
     amplitude:40,
-    color: "#140a42",
+    color: "#ffbd00",
     speed: .25
-})
-let typed = new Typed("#typed1", {
-    stringsElement : "#typed",
-    typeSpeed:100
 })
 
 
